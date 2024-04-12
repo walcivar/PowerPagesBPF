@@ -1,0 +1,57 @@
+.horizontal-timeline {
+    position: relative; /* Ensure positioning context */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    position: relative; /* Ensure positioning context */
+    width: 30px; /* Increased size of the circle */
+    height: 30px; /* Increased size of the circle */
+    background-color: white;
+    border: 3px solid #ccc; /* Default thicker border for the circle */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Increased margin */
+    z-index: 1; /* Ensure circles are above the line */
+}
+
+.timeline-item.current .circle {
+    border-color: #4CAF50; /* Green border for current stage */
+}
+
+.timeline-item.current .circle::after {
+    content: "";
+    position: absolute;
+    width: 10px; /* Size of the inner circle */
+    height: 10px; /* Size of the inner circle */
+    background-color: #4CAF50; /* Green color for the inner circle */
+    border-radius: 50%;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the inner circle */
+}
+
+.line {
+    position: absolute;
+    width: 96%;
+    height: 2px;
+    left: 2%;
+    background-color: #ccc; /* Thick grey line connecting circles */
+    top: 30%; /* Adjusted top position to align with the center of the circles */
+    transform: translateY(-50%); /* Center the line vertically */
+    z-index: 0; /* Ensure line is behind circles */
+}
+
+.stage-name {
+    font-size: 16px; /* Increased font size */
+    color: #555;
+    text-align: center;
+    font-weight: bold; /* Make the stage name bold */
+}
