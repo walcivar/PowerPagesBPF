@@ -13,13 +13,13 @@ Then when configuring the PCF you will have to select those two created line of 
 
 Of course, this workaround involves extra work to fill in both text columns, but don't worry, here's a line of JavaScript that will help you fill in the first column (the values of the optionSet).
 
-formContext.getAttribute(<schemaname>).getOptions();
+formContext.getAttribute("OptionSet_schemaName").getOptions();
 
 You can apply this line when you are creating a record manually in the Model Driven App.
 
 And for the second column (the current/selected value) you can also use a line of JavaScript:
 
-formContext.getAttribute(<schemaname>).getText();
+formContext.getAttribute("OptionSet_schemaName").getText();
 
 Or you can get it from a plugin if you don't want to rely on the user changing the optionSet manually.
 
