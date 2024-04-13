@@ -1,7 +1,7 @@
 The goal of this PCF is to give the external user a friendly UI to identify what state their record is in, it could be a support case or any other custom table that applies to your business scenario. 
 That's why this PCF applies to Power Pages.
 
-Unfortunately at the time I am deploying this PCF, the PCFs for Power Pages have a limitation with the OptionSet column as the bound parameter, as when testing the input parameter it will come up empty. However it works perfectly for Model Driven Apps.
+Unfortunately at the time I am developing this PCF, PCFs for Power Pages have a limitation with the OptionSet column as the bound parameter, as when testing the input parameter it will come up empty. However it works perfectly for Model Driven Apps.
 So to overcome this limitation, the idea is to create 2 lines of text columns in Dataverse, the first column will store the OptionSet values separated by commas like: Packed,Shipped,In process of delivery,Delivered.
 The second column is to store the current/selected value in the OptionSet as: Sent
 
