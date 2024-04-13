@@ -1,4 +1,4 @@
-The goal of this PCF is to give the external user a friendly UI to identify what state their record is in, it could be a support case or any other custom table that applies to their business scenario. 
+The goal of this PCF is to give the external user a friendly UI to identify what state their record is in, it could be a support case or any other custom table that applies to your business scenario. 
 That's why this PCF applies to Power Pages.
 
 Unfortunately at the time I am deploying this PCF, the PCFs for Power Pages have a limitation with the OptionSet column as the bound parameter, as when testing the input parameter it will come up empty. However it works perfectly for Model Driven Apps.
