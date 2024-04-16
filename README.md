@@ -5,7 +5,7 @@ Unfortunately at the time I am developing this PCF, PCFs for Power Pages have a 
 So to overcome this limitation, the workaround is to create 2 lines of text columns in Dataverse, the first column will store the OptionSet values separated by commas like: Packed,Shipped,In process of delivery,Delivered.
 The second column is to store the current/selected value in the OptionSet as: Sent
 
-![image](https://github.com/walcivar/PowerPagesBPF/assets/5630463/1ef73f43-bcf1-4005-bd04-63685add8e4e)
+![image](https://github.com/walcivar/PowerPagesBPF/assets/5630463/7f87d286-9552-43dd-8e70-7094d9535cd1)
 
 Then when configuring the PCF you will have to select those two created line of text columns:
 
